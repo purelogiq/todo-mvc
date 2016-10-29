@@ -1,0 +1,24 @@
+<%= include_vue 'page/test' %>
+<%= include_vue 'page/test' %>
+
+<style type="text/css">
+  section.colorful h2 {
+    text-decoration: underline;
+  }
+</style>
+
+<script type="text/x-template" id="page-home-template">
+  <section class="colorful">
+    <h2>Hi mom</h2>
+    <page-test></page-test>
+    <page-test></page-test>
+  </section>
+</script>
+
+<script type="text/javascript">
+  var PageHome = Vue.extend({
+    template: '#page-home-template'
+  });
+
+  new PageHome().$mount('#vue-root')
+</script>

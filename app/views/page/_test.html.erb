@@ -1,0 +1,25 @@
+<style type="text/css">
+  div.page-test p {
+    color: #330099;
+    padding: 3px;
+    border: 1px dotted blue;
+  }
+</style>
+
+<script type="text/x-template" id="page-test-template">
+  <div class="page-test">
+    <input v-model="message">
+    <p>{{message}}</p>
+  </div>
+</script>
+
+<script type="text/javascript">
+  Vue.component('page-test', {
+    template: '#page-test-template',
+    data: function(){
+      return {
+        message: 'Hi mom. you are the best! :)'
+      };
+    }
+  });
+</script>

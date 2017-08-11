@@ -16,9 +16,9 @@
 </script>
 
 <script type="text/javascript">
-  var PageHome = Vue.extend({
-    template: '#page-home-template'
-  });
-
-  new PageHome().$mount('#vue-root')
+  (new (
+    Vue.extend({
+      template: '#page-home-template'
+    })
+  )).$mount('#vue-root');
 </script>
